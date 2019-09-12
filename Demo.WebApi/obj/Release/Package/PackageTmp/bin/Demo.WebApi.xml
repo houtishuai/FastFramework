@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Demo.WebApi</name>
+    </assembly>
+    <members>
+        <member name="F:Demo.WebApi.App_Start.AutofacUtil._container">
+            <summary>
+            Autofac容器对象
+            </summary>
+        </member>
+        <member name="M:Demo.WebApi.App_Start.AutofacUtil.InitAutofac">
+            <summary>
+            初始化autofac
+            </summary>
+        </member>
+        <member name="M:Demo.WebApi.App_Start.AutofacUtil.GetFromFac``1">
+            <summary>
+            从Autofac容器获取对象
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:Demo.WebApi.App_Start.OAuthServerProvider.ValidateTokenRequest(Microsoft.Owin.Security.OAuth.OAuthValidateTokenRequestContext)">
+            <summary>
+            验证Token请求,限制授权模式
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Demo.WebApi.App_Start.OAuthServerProvider.ValidateClientAuthentication(Microsoft.Owin.Security.OAuth.OAuthValidateClientAuthenticationContext)">
+            <summary>
+            验证OAuth请求
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Demo.WebApi.App_Start.OAuthServerProvider.GrantResourceOwnerCredentials(Microsoft.Owin.Security.OAuth.OAuthGrantResourceOwnerCredentialsContext)">
+            <summary>
+            密码模式验证
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Demo.WebApi.App_Start.OAuthServerProvider.CheckUser(Microsoft.Owin.Security.OAuth.OAuthGrantResourceOwnerCredentialsContext)">
+            <summary>
+            校验用户是否合法
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:Demo.WebApi.SwaggerConfig">
+            <summary>
+            swagger文档配置信息
+            </summary>
+        </member>
+        <member name="M:Demo.WebApi.SwaggerConfig.Register">
+            <summary>
+            注册swagger相关配置信息
+            </summary>
+        </member>
+        <member name="M:Demo.WebApi.App_Start.SwaggerControllerDescProvider.#ctor(Swashbuckle.Swagger.ISwaggerProvider,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="swaggerProvider"></param>
+            <param name="xml">xml文档路径</param>
+        </member>
+        <member name="M:Demo.WebApi.App_Start.SwaggerControllerDescProvider.GetControllerDesc">
+            <summary>
+            从API文档中读取控制器描述
+            </summary>
+            <returns>所有控制器描述</returns>
+        </member>
+        <member name="M:Demo.WebApi.App_Start.WebApiExceptionFilterAttribute.OnException(System.Web.Http.Filters.HttpActionExecutedContext)">
+            <summary>
+            WebApi拦截到有异常发生时处理逻辑
+            </summary>
+            <param name="actionExecutedContext"></param>
+        </member>
+        <member name="M:Demo.WebApi.App_Start.WebApiExceptionFilterAttribute.GetResponse(System.Int32,System.String)">
+            <summary>
+            设置拦截到异常的响应信息
+            </summary>
+            <param name="httpStatusCode">httpstatus状态码</param>
+            <param name="message">返回信息</param>
+            <returns></returns>
+        </member>
+        <member name="P:Demo.WebApi.Controllers.BaseApiController.DoctorID">
+            <summary>
+            医生ID
+            </summary>
+        </member>
+        <member name="P:Demo.WebApi.Controllers.BaseApiController.DoctorName">
+            <summary>
+            医生姓名
+            </summary>
+        </member>
+        <member name="T:Demo.WebApi.Controllers.DoctorController">
+            <summary>
+            医生相关控制器
+            </summary>
+        </member>
+        <member name="T:Demo.WebApi.Controllers.HomeController">
+            <summary>
+            首页控制器
+            </summary>
+        </member>
+        <member name="M:Demo.WebApi.Controllers.HomeController.Index">
+            <summary>
+            首页
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Demo.WebApi.Controllers.LoginController">
+            <summary>
+            登录控制器
+            </summary>
+        </member>
+        <member name="M:Demo.WebApi.Controllers.LoginController.#ctor(Demo.Application.Authorization.ILoginService)">
+            <summary>
+            登录控制器类构造函数
+            </summary>
+            <param name="loginService">登录服务</param>
+        </member>
+        <member name="M:Demo.WebApi.Controllers.LoginController.CheckLogin(Demo.Application.Authorization.Dto.LoginFormInput)">
+            <summary>
+            登录检查
+            </summary>
+            <param name="loginFormInput">登录表单信息</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

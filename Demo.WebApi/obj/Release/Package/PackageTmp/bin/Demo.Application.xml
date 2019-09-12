@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Demo.Application</name>
+    </assembly>
+    <members>
+        <member name="T:Demo.Application.AppServices.DoctorService">
+            <summary>
+            医生相关服务
+            </summary>
+        </member>
+        <member name="T:Demo.Application.AppServices.IDoctorService">
+            <summary>
+            医生相关服务接口
+            </summary>
+        </member>
+        <member name="M:Demo.Application.AppServices.IDoctorService.GetDoctorInfoByAccount(System.String,System.String)">
+            <summary>
+            根据医生账号密码获取医生信息
+            </summary>
+            <param name="account">账号</param>
+            <param name="password">密码</param>
+            <returns>医生账号信息</returns>
+        </member>
+        <member name="M:Demo.Application.AppServices.DoctorService.GetDoctorInfoByAccount(System.String,System.String)">
+            <summary>
+            根据医生账号密码获取医生信息
+            </summary>
+            <param name="account">账号</param>
+            <param name="password">密码</param>
+            <returns>医生账号信息</returns>
+        </member>
+        <member name="T:Demo.Application.Authorization.Dto.PlatForm">
+            <summary>
+            登录平台类型
+            </summary>
+        </member>
+        <member name="F:Demo.Application.Authorization.Dto.PlatForm.PC">
+            <summary>
+            PC
+            </summary>
+        </member>
+        <member name="F:Demo.Application.Authorization.Dto.PlatForm.App">
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="T:Demo.Application.Authorization.Dto.LoginFormInput">
+            <summary>
+            登录表单信息
+            </summary>
+        </member>
+        <member name="P:Demo.Application.Authorization.Dto.LoginFormInput.Account">
+            <summary>
+            账号名称
+            </summary>
+        </member>
+        <member name="P:Demo.Application.Authorization.Dto.LoginFormInput.Password">
+            <summary>
+            账号密码
+            </summary>
+        </member>
+        <member name="P:Demo.Application.Authorization.Dto.LoginFormInput.Platform">
+            <summary>
+            登录平台类型( PC:1 App:2)
+            </summary>
+        </member>
+        <member name="P:Demo.Application.Authorization.Dto.LoginFormInput.FormInputList">
+            <summary>
+            数组
+            </summary>
+        </member>
+        <member name="P:Demo.Application.Authorization.Dto.TokenResult.AccessToken">
+            <summary>
+            token字符串
+            </summary>
+        </member>
+        <member name="P:Demo.Application.Authorization.Dto.TokenResult.TokenType">
+            <summary>
+            token类型
+            </summary>
+        </member>
+        <member name="P:Demo.Application.Authorization.Dto.TokenResult.ExpiresIn">
+            <summary>
+            token过期时间（秒）
+            </summary>
+        </member>
+        <member name="M:Demo.Application.Authorization.ILoginService.GetToken(System.String,System.String)">
+            <summary>
+            获取token
+            </summary>
+            <param name="userName">用户名</param>
+            <param name="password">密码</param>
+            <returns></returns>
+        </member>
+        <member name="T:Demo.Application.Authorization.LoginService">
+            <summary>
+            登录相关api服务
+            </summary>
+        </member>
+        <member name="M:Demo.Application.Authorization.LoginService.GetToken(System.String,System.String)">
+            <summary>
+            获取token
+            </summary>
+            <param name="userName">用户名</param>
+            <param name="password">密码</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
