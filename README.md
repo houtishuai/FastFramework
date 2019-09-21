@@ -7,4 +7,4 @@
          Autofac
          Log4Net
          Dapper
-         
+         OAuth2
